@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wordle Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-container">
+    <h1 class="game-title">Wordle Game</h1>
+
+    <div id="board" class="grid-board">
+      <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+      <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+      <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+      <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+      <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+      <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+    </div>
+
+    <div class="controls">
+      <input type="text" id="guess-input" maxlength="5" placeholder="5 letters" autofocus>
+      <button id="submit-btn">Submit Guess</button>
+    </div>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="words.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
