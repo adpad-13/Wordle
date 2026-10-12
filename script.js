@@ -11,7 +11,7 @@ function checkGuess() {
 //setting input to uppercase for easy matching
   const guess = guessInput.value.trim().toUpperCase();
 //check input length
-  if (guess.length !== 5) {
+  if (guess.length !== 5 || !isNaN(guess)) {
     message.innerText = "Please enter a 5-letter word.";
     return;
   }
